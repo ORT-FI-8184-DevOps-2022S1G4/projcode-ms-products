@@ -17,6 +17,6 @@ jobs:
         uses: peter-evans/repository-dispatch@v2
         with:
           token: ${{ secrets.REPO_ACCESS_TOKEN }}
-          repository: fernfalcnico/remote-github-action
+          repository: ORT-FI-8184-DevOps-2022S1G4/devops
           event-type: ms-products-release
           client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.event.after }}", "repository": "${{ github.repository }}", "token": "${{ github.token }}", "branch": "${{ env.BRANCH }}"}'
